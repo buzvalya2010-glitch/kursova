@@ -1,0 +1,54 @@
+.sec9 {
+    margin-top: 100px;
+
+    h1 {
+        @include font("Playfair Display", 700, 36px, var(--violet));
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content9 {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        // .rightimg{
+
+        // }
+        .content9left {
+            p {
+                @include font("Montserrat", 400, 24px, black);
+                line-height: 160%;
+                margin-top: 10px
+            }
+
+            h2 {
+                @include font("Montserrat", 400, 24px, var(--violet));
+                line-height: 160%;
+                margin-top: 5px
+            }
+
+            .social9 {
+                margin-top: 5px;
+                display: flex;
+                gap: 25px;
+
+                img {
+                    height: 25px;
+                    width: 25px;
+                }
+            }
+
+            button {
+                margin-top: 40px;
+                background-color: var(--violet);
+                @include font("Montserrat", 700, 18px, white);
+                width: 222px;
+                height: 54px;
+                border: none;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

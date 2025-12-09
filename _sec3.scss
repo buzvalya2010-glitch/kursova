@@ -1,0 +1,42 @@
+.sec3{
+    height: 531px;
+    padding-top: 80px;
+    position: relative;
+    h1{
+        @include font("Playfair Display", 700, 40px, var(--violet));
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+    }
+
+    .line3{
+        height: 1px;
+        background-color: var(--violet);       
+    }
+    .first3{
+        position: absolute;
+        bottom: 275px;
+    }
+    .second3{
+        position: absolute;
+        top: 324px;
+    }
+    .content3{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 48px;
+        h2{
+            @include font("Montserrat", 500, 24px, black);
+            text-transform: uppercase;
+            margin-top: 41px;
+            max-width: 290px;
+        }
+        p{
+            @include font("Montserrat", 400, 16px, var(--gray));
+            line-height: 160%;
+            margin-top: 41px;
+            max-width: 290px;
+        }
+    }
+}

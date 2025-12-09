@@ -1,0 +1,48 @@
+@mixin font($var, $var1, $var2, $var3) {
+    font-family: $var;
+    font-weight: $var1;
+    font-size: $var2;
+    color: $var3;
+}
+
+.sec1 {
+    background-image: url(/images/backg.png);
+    height: 693px;
+
+    .content1 {
+        padding-top: 260px;
+        margin-left: 90px;
+
+        h1 {
+            @include font("Playfair Display", 700, 54px, var(--violet));
+            text-transform: uppercase;
+
+        }
+
+        p {
+            @include font("Montserrat", 400, 16px, var(--gray));
+            width: 459px;
+            margin-top: 20px;
+            line-height: 160%;
+        }
+
+        button {
+            margin-top: 20px;
+            background-color: var(--violet);
+            @include font("Montserrat", 700, 18px, white);
+            width: 268px;
+            height: 53px;
+            border: none;
+        }
+    }
+
+    .social1 {
+        margin-left: 90px;
+        margin-top: 150px;
+        display: flex;
+        gap: 30px;
+        a{
+            @include font("Montserrat", 700, 16px, var(--gray));
+        }
+    }
+}

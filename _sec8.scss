@@ -1,0 +1,88 @@
+.sec8 {
+    display: flex;
+    justify-content: center;
+    // padding-left: 90px;
+    // padding-right: 90px;
+
+    .content8 {
+        margin-left: 40px;
+        position: relative;
+
+        h1 {
+            @include font("Playfair Display", 700, 36px, var(--violet));
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            max-width: 627px;
+        }
+
+        .register8 {
+            max-width: 608px;
+            padding-right: 70px;
+
+            input {
+                margin-top: 30px;
+                height: 43px;
+                border: none;
+                @include font("Montserrat", 400, 24px, black);
+                line-height: 160%;
+            }
+
+            label {
+                @include font("Montserrat", 400, 24px, black);
+                line-height: 160%;
+            }
+
+            .line8 {
+                height: 1px;
+                background-color: var(--gray);
+            }
+
+            p {
+                @include font("Montserrat", 400, 24px, black);
+                line-height: 160%;
+            }
+
+            .chose88 {
+                margin-top: 30px;
+                position: relative;
+
+                .chose8 {
+                    display: flex;
+
+                    img {
+                        width: 20px;
+                        height: 10px;
+                        position: absolute;
+                        bottom: 10px;
+                        right: 0px;
+                    }
+                }
+            }
+
+            .timechose {
+                display: flex;
+                justify-content: center;
+                gap: 47px;
+            }
+
+            .time {
+                max-width: 280px;
+                width: 100%;
+            }
+
+            button {
+                margin-top: 70px;
+                background-color: var(--violet);
+                @include font("Montserrat", 700, 18px, white);
+                width: 222px;
+                height: 54px;
+                border: none;
+                text-transform: uppercase;
+                position: absolute;
+                bottom: 0px;
+                right: 90px;
+            }
+        }
+    }
+}

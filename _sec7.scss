@@ -1,0 +1,68 @@
+.sec7 {
+    height: 410px;
+
+    h1 {
+        margin-top: 25px;
+        @include font("Playfair Display", 700, 40px, var(--violet));
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content7 {
+        margin-top: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .arrow {
+            width: 15px;
+            height: 30px;
+
+            .right {
+                position: absolute;
+                right: 90px;
+            }
+
+            .left {
+                position: absolute;
+                left: 90px;
+            }
+        }
+
+        .feedbacks7 {
+            margin-left: 45px;
+            margin-right: 45px;
+            display: flex;
+            gap: 20px;
+
+            .feedback7 {
+                border: var(--violet) 1px solid;
+                position: relative;
+                max-width: 640px;
+
+                h2 {
+                    @include font("Montserrat", 500, 24px, var(--violet));
+                    line-height: 160%;
+                    text-transform: uppercase;
+                    margin-top: 25px;
+                    margin-left: 35px;
+                }
+
+                p {
+                    max-width: 559px;
+                    margin: auto;
+                    padding: 20px 40px 40px 40px;
+                    @include font("Montserrat", 400, 16px, var(--gray));
+                    line-height: 160%;
+                }
+
+                img {
+                    position: absolute;
+                    top: 25px;
+                    right: 46px;
+                }
+            }
+        }
+    }
+}

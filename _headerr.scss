@@ -1,0 +1,72 @@
+a {
+    text-decoration: none;
+}
+
+@mixin font($var, $var1, $var2, $var3) {
+    font-family: $var;
+    font-weight: $var1;
+    font-size: $var2;
+    color: $var3;
+}
+
+.headerr {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    background-color: var(--violet);
+    gap: 132px;
+
+    .burger-button {
+        display: none;
+
+        div {
+            width: 20px;
+            height: 2px;
+            background-color: black;
+            margin-bottom: 1px;
+            margin-right: 10px;
+            margin-bottom: 4px;
+        }
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        gap: 10px;
+
+        h1 {
+            margin-left: 10px;
+            @include font("Playfair Display", 400, 32px, white);
+        }
+    }
+
+    .menu-head {
+        display: flex;
+        gap: 64px;
+        @include font("Montserrat", 700, 16px, white);
+
+        a {
+            color: white;
+        }
+    }
+
+    .phone-head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+        width: 268px;
+        height: 54px;
+        border: 1px white solid;
+        @include font("Montserrat", 400, 20px, white);
+
+        img {
+            height: 30px;
+            width: 30px;
+        }
+    }
+}
+

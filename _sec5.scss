@@ -1,0 +1,82 @@
+@mixin font($var, $var1, $var2, $var3) {
+    font-family: $var;
+    font-weight: $var1;
+    font-size: $var2;
+    color: $var3;
+}
+
+.sec5 {
+    margin-top: 25px;
+    max-width: 1420px;
+    height:600px;
+    position: relative;
+    margin: auto;
+
+    h1 {
+        margin-top: 64px;
+        @include font("Playfair Display", 700, 40px, var(--violet));
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu5 {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+
+        a {
+            text-decoration: none;
+            @include font("Montserrat", 700, 24px, var(--gray));
+        }
+    }
+
+    .option5 {
+        max-width: 1420px;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 47px;
+        margin-right: 47px;
+
+        .arrow {
+            width: 15px;
+            height: 30px;
+
+            .right {
+                position: absolute;
+                right: 90px;
+            }
+
+            .left {
+                position: absolute;
+                left: 90px;
+            }
+        }
+
+        .opt5 {
+            width: 50%;
+            margin: auto;
+            max-width: 400px;
+            
+            img{
+                margin: auto;
+                display: flex;
+                align-items: center;
+            }
+            h2 {
+                margin-top: 10px;
+                @include font("Montserrat", 700, 18px, var(--violet));
+                text-align: center;
+            }
+
+            p {
+                margin-top: 5px;
+                @include font("Montserrat", 700, 18px, var(--gray));
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.footer{
+    padding-top: 30px;
+    margin-top: 112px;
+    height: 168px;
+    background-color: var(--violet);
+    display: flex;
+    justify-content: center;
+    gap: 132px;
+    .logo {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        gap: 10px;
+
+        h1 {
+            @include font("Playfair Display", 400, 32px, white);
+        }
+    }
+    .menu-foot {
+        display: flex;
+        gap: 64px;
+        @include font("Montserrat", 700, 16px, white);
+
+        a {
+            color: white;
+            white-space: nowrap;
+        }
+    }
+    .phone-foot{
+        h2{
+
+            @include font("Montserrat", 700, 18px, white);
+        }
+        p{
+            margin-top: 5px;
+            @include font("Montserrat", 400, 18px, white);
+            line-height: 160%;
+        }
+        .social-foot{
+            margin-top: 10px;
+            display: flex;
+            gap: 20px;
+        }
+    }
+}
